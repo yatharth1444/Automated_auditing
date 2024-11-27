@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS Benchmark Audit Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .report-header {
+            text-align: center;
+        }
+        .report-content {
+            font-size: 16px;
+            white-space: pre-wrap;  
+        }
+        .text-center {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="report-header">
+            <h1>CIS Benchmark Audit Report</h1>
+        </div>
+        <div class="report-content">
+            Disable Cramfs passed: cramfs module disabled successfully.
+Ensure noexec option on /var/log/audit failed: noexec option is not set on /var/log/audit partition
+Disable Squashfs passed: squashfs module disabled successfully.
+Ensure noexec option on /tmp failed: noexec option is not set on /tmp partition
+Ensure nosuid option on /tmp passed: nosuid option is set on /tmp partition.
+Ensure /var/log/audit is a Separate Partition failed: /var/log/audit is not a separate partition
+Ensure nosuid option on /dev/shm passed: nosuid option is set on /dev/shm partition.
+Ensure USB Storage is Disabled passed: USB storage disabled successfully.
+Disable Freevxfs passed: freevxfs module disabled successfully.
+Disable Jffs2 passed: jffs2 module disabled successfully.
+Ensure noexec option on /dev/shm failed: noexec option is not set on /dev/shm partition
+Check Linux Firewall passed: Status: active
+
+Ensure nosuid option on /home failed: nosuid option is not set on /home partition
+Disable Hfs passed: hfs module disabled successfully.
+Ensure nosuid option on /var failed: nosuid option is not set on /var partition
+Ensure automounting is Disabled failed: Failed to check automounting status: exit status 4
+Ensure /var/log is a Separate Partition failed: /var/log is not a separate partition
+Ensure nosuid option on /var/log/audit failed: nosuid option is not set on /var/log/audit partition
+Ensure /var is a Separate Partition failed: /var is not a separate partition
+Ensure nodev option on /var failed: nodev option is not set on /var partition
+Ensure /var/tmp is a Separate Partition failed: /var/tmp is not a separate partition
+Ensure nodev option on /var/tmp failed: nodev option is not set on /var/tmp partition
+Ensure nosuid option on /var/log failed: nosuid option is not set on /var/log partition
+Ensure nodev option on /home failed: nodev option is not set on /home partition
+Disable Udf passed: udf module disabled successfully.
+Ensure /tmp is a Separate Partition failed: /tmp is not a separate partition
+Ensure nodev option on /dev/shm passed: nodev option is set on /dev/shm partition.
+Ensure nodev option on /tmp passed: nodev option is set on /tmp partition.
+Ensure noexec option on /var/log failed: noexec option is not set on /var/log partition
+
+        </div>
+        <div class="text-center">
+            <a href="audit_report.pdf" class="btn btn-primary" download>Download PDF</a>
+        </div>
+    </div>
+</body>
+</html>
